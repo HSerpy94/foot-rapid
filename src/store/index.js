@@ -14,6 +14,9 @@ export default createStore({
     },
     setOrden(state,payload){
       state.ordenes[payload.id] = payload
+    },
+    aumentar(state, payload){
+      state.ordenes[id].cantidad = state.ordenes[id].cantidad +1;
     }
   },
   actions: {

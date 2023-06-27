@@ -5,10 +5,10 @@
         <td>{{ item.cantidad }}</td>
         <td>${{item.precio.toFixed(2)}}</td>
         <td>
-            <button class="btn btn-info btn-sm" >
+            <button class="btn btn-info btn-sm" @click="aumentar(item.id)">
                 +
             </button>
-            <button class="btn btn-danger btn-sm">
+            <button class="btn btn-danger btn-sm" @click="disminuir(item.id)">
                 -
             </button>
         </td>
@@ -16,9 +16,16 @@
 </template>
 
 <script>
+import { useStore } from 'vuex';
 export default {
     name:'ListPay',
-    props:["item"]
+    props:["item"],
+    setup(){
+        const store = useStore()
+        const aumentar = id =>{store.commit('aumentar', id)}
+        const disminuir = id =>{store.commit('disminur', id)}
+
+    }
 }
 </script>
 

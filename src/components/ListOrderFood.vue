@@ -1,5 +1,5 @@
 <template>
-  
+  {{items}}
   <table class="table table-striped mt-3">
     <thead>
       <tr>

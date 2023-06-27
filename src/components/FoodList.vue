@@ -2,9 +2,10 @@
   <div class="col-sm-4 mt-3">
     <div class="card">
       <FoodSelect v-if="platillo.order.In_Progress"></FoodSelect>
+      
       <img :src="platillo.image" class="card-img-top">
       <div class="card-header">
-        <input type="number" class="form-control" placeholder="Cantidad de platillos">
+        Platillos: 1
       </div>
       <div class="card-body">
         <div class="d-flex justify-content-between">
