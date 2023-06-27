@@ -1,0 +1,32 @@
+[
+    {
+      "id": 1,
+      "precio": 100.00,
+      "name": "Carne Arabe",
+      "order": {
+        "Available":true,
+        "In_Progress":false
+      },
+      "image": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8MXx8fGVufDB8fHx8&w=1000&q=80"
+    },
+    {
+      "id": 2,
+      "precio": 90.00,
+      "name": "Sopa Maruchan",
+      "order": {
+        "Available":true,
+        "In_Progress":false
+    },
+    "image": "https://images.unsplash.com/photo-1602881916963-5daf2d97c06e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8Ym93bCUyMGZvb2R8ZW58MHx8MHx8&w=1000&q=80"
+    },
+    {
+      "id": 3,
+      "precio": 150.00,
+      "name": "Caldo de Pollo",
+      "order": {
+        "Available":true,
+        "In_Progress":false
+    },
+    "image": "https://s3-media0.fl.yelpcdn.com/bphoto/dfhE4qaBhAXwlqxXxLWG7g/348s.jpg"
+    }
+  ]
