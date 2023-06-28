@@ -15,8 +15,15 @@ export default createStore({
     setOrden(state,payload){
       state.ordenes[payload.id] = payload
     },
-    aumentar(state, payload){
+    aumentar(state, id){
       state.ordenes[id].cantidad = state.ordenes[id].cantidad +1;
+    },
+    disminuir(state, id){
+      state.ordenes[id].cantidad = state.ordenes[id].cantidad -1;
+      if(state.ordenes[id].cantidad == 0){
+        delete state.ordenes[id];
+        alert("elemento eliminado");
+      }
     }
   },
   actions: {

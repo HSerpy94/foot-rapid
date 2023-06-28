@@ -3,7 +3,7 @@
         <th scope="row">{{item.id}}</th>
         <td>{{item.name}}</td>
         <td>{{ item.cantidad }}</td>
-        <td>${{item.precio.toFixed(2)}}</td>
+        <td>${{(item.cantidad * item.precio).toFixed(2)}}</td>
         <td>
             <button class="btn btn-info btn-sm" @click="aumentar(item.id)">
                 +
@@ -23,8 +23,8 @@ export default {
     setup(){
         const store = useStore()
         const aumentar = id =>{store.commit('aumentar', id)}
-        const disminuir = id =>{store.commit('disminur', id)}
-
+        const disminuir = id =>{store.commit('disminuir', id)}
+        return {aumentar,disminuir}
     }
 }
 </script>

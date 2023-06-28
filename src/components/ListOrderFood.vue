@@ -39,6 +39,7 @@ export default {
     const items = computed(() => store.state.ordenes)
     return { items }
   }
+  
 }
 </script>
 
